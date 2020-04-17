@@ -42,6 +42,7 @@ class ViewController: UIViewController {
         counter = counter + 1
         timerLabel.text =  "\(counter)"
     }
+    
 
     @IBAction func startTime(_ sender: Any) {
       timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(startTimerr), userInfo: nil, repeats: true)
