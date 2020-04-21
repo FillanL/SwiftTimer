@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qil-xU-an0">
-                                <rect key="frame" x="156" y="372" width="102" height="30"/>
+                                <rect key="frame" x="156" y="372" width="103" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="103" id="VyE-wG-tFT"/>
                                     <constraint firstAttribute="height" constant="30" id="bkT-UM-gFo"/>
@@ -27,7 +27,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gtg-0Q-ZIa">
-                                <rect key="frame" x="156" y="433" width="102" height="30"/>
+                                <rect key="frame" x="156" y="433" width="103" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="DLj-o1-w4U"/>
                                     <constraint firstAttribute="width" constant="103" id="eme-Wb-lg3"/>
@@ -38,7 +38,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88V-CA-cuJ">
-                                <rect key="frame" x="156" y="511" width="102" height="30"/>
+                                <rect key="frame" x="156" y="511" width="103" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="103" id="X10-5R-99f"/>
                                     <constraint firstAttribute="height" constant="30" id="zAH-0a-CJA"/>
@@ -48,7 +48,7 @@
                                     <action selector="resetTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0sC-9s-ovA"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbM-T9-rfc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbM-T9-rfc">
                                 <rect key="frame" x="156" y="229" width="103" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>

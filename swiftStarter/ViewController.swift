@@ -9,7 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var counter = 0
+    var hour = 00
+    var min = 00
+    var sec = 00
     var timer: Timer!
     
     @IBOutlet weak var startBtn: UIButton!
@@ -34,13 +36,31 @@ class ViewController: UIViewController {
         resetBtn.setTitleColor(.systemGray, for: .normal)
         resetBtn.frame = CGRect(x: 100, y: 100, width: 100, height: 50)
         
-        timerLabel.text = "\(counter)"
+        timerLabel.text = "\(hour):\(min):\(sec)"
         timerLabel.textAlignment = .center
     }
     
     @objc func startTimerr() {
-        counter = counter + 1
-        timerLabel.text =  "\(counter)"
+        
+//        sec = sec + 1
+        if (sec == 60){
+            min += 1
+            sec = 0
+            
+            timerLabel.text =  "\(hour):\(min):\(sec)"
+        }
+        if (min == 60) {
+            hour += 1
+            min = 0
+            timerLabel.text =  "\(hour):\(min):\(sec)"
+            
+        }
+        if (sec<60) {
+            sec += 1
+            timerLabel.text =  "\(hour):\(min):\(sec)"
+        }
+        
+//        timerLabel.text =  "\(hour):\(min).\(sec)"
     }
     
 
@@ -53,8 +73,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func resetTimer(_ sender: Any) {
-        counter = 0
-        timerLabel.text =  "\(counter)"
+        hour = 00
+        min = 00
+        sec = 00
+        timerLabel.text =  "\(hour):\(min):\(sec)"
     }
 }
 
